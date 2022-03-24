@@ -1,0 +1,159 @@
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+  	height: 100%;
+  	width: 100%;
+}
+
+body{
+	height: inherit;
+	width: inherit;
+	background: url("matcha-powder-g47679cb00_1920.jpg") no-repeat 20% 50%  fixed;	 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+h1{
+	color: rgb(242, 229, 210);
+/*	margin-top: 200px;
+	margin-left:  500px;*/
+	font-weight: 700;
+
+}
+
+
+.btn-success{
+	background-color: rgb(64, 87, 30); /*olive*/
+	border-color: rgb(64, 87, 30) ;
+	color:rgb(242, 229, 210) /*button letters*/;	
+	padding: 0.8rem 2rem;
+}
+ .btn-success:hover{
+ 	background-color: rgb(218,194, 165);
+ 	border-color: rgb(218,194, 165);
+ 	color: rgb(64, 87, 30);
+ 	transform:  scale(1.1);
+ }
+
+ hr {
+
+	margin: 20px auto;
+    color: rgb(218,194, 165);
+    border: 2px solid rgb(218,194, 165);;
+    max-width: 75px;
+    opacity: 1; 
+
+ }
+
+.btn {
+	font-weight: bold;
+	text-transform: capitalize;
+	border-radius: 300px;
+}
+
+.container{
+	margin-right: 25px;
+}
+
+.buffer {
+	height: 20px;
+}
+
+
+.nav-custom {
+	color:  darkred;
+}
+
+#brandlogo{
+	width: 50px;
+	height: 50px;
+	margin-left: 20px	;
+}
+
+/*navbar styling chane color */
+
+.navbar-custom .navbar-nav > li > a {
+  color: darkred;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+  color: red;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus { 
+	color: red;
+}
+.navbar-custom .navbar-nav > .open > a, .navbar-custom .navbar-nav > .open > a:hover, .navbar-custom .navbar-nav > .open > a:focus {
+  color: red;
+}
+
+.navbar-custom .navbar-nav .nav-item .dropdown-menu >a{
+	color:  darkred;
+
+}
+
+.navbar-custom .navbar-nav .nav-item .dropdown-menu >a:hover , .navbar-custom .navbar-nav .nav-item .dropdown-menu >a:focus {
+	color: blue;
+}
+
+.navbar-custom .navbar-nav .nav-item .dropdown-menu{
+	background-color: rgb(242, 229, 210);
+
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;	
+}
+
+ .navbar-toggler .navbar-toggler-icon {
+ 	color: darkred;
+ 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='darkred' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+ }
+
+
+/*nie działa zrobić tak aby jak jest hamburger otwarty to było na red a nie darkred*/
+  .navbar-toggler .navbar-toggler-icon > .navbar-collapse{
+ 	color: red;
+ 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+ }
+
+
+/*
+Bootstrap provides no html classes to do what you are asking, you have to use media queries like ssc-hrep3 mentioned.
+
+But since you are using bootstrap 4 you can use Sass mixins to create media queries: Using media breakpoints in Bootstrap 4-alpha
+
+Using the example of the answer from the link above you can make something like this:*/
+
+
+ /*kolejne zadania
+ 0. zorbić tak by gdy jest hamburger otwarty, to aby było zmineone póltransparentne tło  w kolorze wiadomo jakim - jasny beż 
+ 1. zrobić tak aby po kliknięciu na link się zwijał hamburger - może ywmagać JS
+ 2. zrobić drugą stronę i na niej również osadzić mój navbar
+ 3. zmniejszyć search na widoku mobile
+ 4. pokazywac widok mobile od xs 
+ 5. przesunąć menu do prawej
+ 6. zrobić background w naszym kolorze dla manu, ale jedynie w widoku mobile*/
+
+
+ /*
+
+jakoś w ten sposób wykonać to zadanien nr 6. Do zorbienia jak sie nauczę troch więcej
+.bg-custom {       
+   @include media-breakpoint-up(sm) { 
+       background:#fff;
+   }
+   @include media-breakpoint-up(md) { 
+       background:#f6f6f6;
+   }
+   @include media-breakpoint-up(lg) { 
+       background:#fafafa;
+   }
+}*/
